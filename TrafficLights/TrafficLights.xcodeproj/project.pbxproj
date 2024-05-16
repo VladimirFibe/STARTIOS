@@ -13,6 +13,7 @@
 		E8B3F4702BF5B9CF00F7C9A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B3F46F2BF5B9CF00F7C9A0 /* Assets.xcassets */; };
 		E8B3F4732BF5B9CF00F7C9A0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8B3F4722BF5B9CF00F7C9A0 /* Base */; };
 		E8B3F47B2BF5B9DE00F7C9A0 /* TrafficLightsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B3F47A2BF5B9DE00F7C9A0 /* TrafficLightsController.swift */; };
+		E8B3F47E2BF5D2BE00F7C9A0 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B3F47D2BF5D2BE00F7C9A0 /* Screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E8B3F4742BF5B9CF00F7C9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8B3F47A2BF5B9DE00F7C9A0 /* TrafficLightsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsController.swift; sourceTree = "<group>"; };
 		E8B3F47C2BF5BA4400F7C9A0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E8B3F47D2BF5D2BE00F7C9A0 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				E8B3F47C2BF5BA4400F7C9A0 /* README.md */,
+				E8B3F47D2BF5D2BE00F7C9A0 /* Screenshot.png */,
 				E8B3F4652BF5B9CE00F7C9A0 /* TrafficLights */,
 				E8B3F4642BF5B9CE00F7C9A0 /* Products */,
 			);
@@ -130,6 +133,7 @@
 				E8B3F4702BF5B9CF00F7C9A0 /* Assets.xcassets in Resources */,
 				E8B3F4732BF5B9CF00F7C9A0 /* Base in Resources */,
 				E8B3F46E2BF5B9CE00F7C9A0 /* Base in Resources */,
+				E8B3F47E2BF5D2BE00F7C9A0 /* Screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
