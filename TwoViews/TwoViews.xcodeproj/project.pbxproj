@@ -26,6 +26,8 @@
 		E8B3F4502BF5B37B00F7C9A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8B3F4522BF5B37B00F7C9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8B3F4582BF5B61B00F7C9A0 /* TwoViewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewsController.swift; sourceTree = "<group>"; };
+		E8B3F47F2BF5D4F000F7C9A0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E8B3F4802BF5D58400F7C9A0 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,8 @@
 		E8B3F4382BF5B37A00F7C9A0 = {
 			isa = PBXGroup;
 			children = (
+				E8B3F47F2BF5D4F000F7C9A0 /* README.md */,
+				E8B3F4802BF5D58400F7C9A0 /* Screenshot.png */,
 				E8B3F4432BF5B37A00F7C9A0 /* TwoViews */,
 				E8B3F4422BF5B37A00F7C9A0 /* Products */,
 			);
