@@ -6,7 +6,7 @@ final class TrafficLightsController: UIViewController {
     private let stackView: UIStackView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.distribution = .fillEqually
-        $0.alignment = .center
+        $0.alignment = .fill
         $0.axis = .vertical
         $0.spacing = 10
         return $0
@@ -47,10 +47,9 @@ final class TrafficLightsController: UIViewController {
 
     private func setupContstraints() {
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            stackView.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -50),
+            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            stackView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.4),
+            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 
             actionButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
             actionButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50),
