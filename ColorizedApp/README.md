@@ -1,3 +1,3 @@
 #  ColorizedApp
 
-![](three-sliders.png)
+![](Screenshot.png)
