@@ -13,7 +13,6 @@
 		E893A7F12BF6B74900E63C86 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E893A7F02BF6B74900E63C86 /* Base */; };
 		E893A7F32BF6B74A00E63C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E893A7F22BF6B74A00E63C86 /* Assets.xcassets */; };
 		E893A7F62BF6B74A00E63C86 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E893A7F52BF6B74A00E63C86 /* Base */; };
-		E893A7FE2BF6C4E700E63C86 /* SegmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E893A7FD2BF6C4E700E63C86 /* SegmentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		E893A7F22BF6B74A00E63C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E893A7F52BF6B74A00E63C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E893A7F72BF6B74A00E63C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E893A7FD2BF6C4E700E63C86 /* SegmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 				E893A7E92BF6B74900E63C86 /* AppDelegate.swift */,
 				E893A7EB2BF6B74900E63C86 /* SceneDelegate.swift */,
 				E893A7ED2BF6B74900E63C86 /* ViewController.swift */,
-				E893A7FD2BF6C4E700E63C86 /* SegmentCell.swift */,
 				E893A7EF2BF6B74900E63C86 /* Main.storyboard */,
 				E893A7F22BF6B74A00E63C86 /* Assets.xcassets */,
 				E893A7F42BF6B74A00E63C86 /* LaunchScreen.storyboard */,
@@ -144,7 +141,6 @@
 				E893A7EE2BF6B74900E63C86 /* ViewController.swift in Sources */,
 				E893A7EA2BF6B74900E63C86 /* AppDelegate.swift in Sources */,
 				E893A7EC2BF6B74900E63C86 /* SceneDelegate.swift in Sources */,
-				E893A7FE2BF6C4E700E63C86 /* SegmentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
