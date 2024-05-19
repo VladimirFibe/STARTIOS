@@ -3,6 +3,7 @@ import UIKit
 class ViewController: UIViewController {
     private let stackView = UIStackView()
     private let displayLabel = UILabel()
+    private let spacing = 14.0
     private var buttonZero: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
     private func setupStackView() {
         view.addSubview(stackView)
         stackView.axis = .vertical
-        stackView.spacing = 8
+        stackView.spacing = spacing
         stackView.addArrangedSubview(UIView())
         setupDisplayLabel()
         stackView.addArrangedSubview(makeStack(with: makeViews(with: ["AC", "±", "%", "÷"])))
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
 
     private func makeStack(with views: [UIView]) -> UIStackView {
         let stack = UIStackView(arrangedSubviews: views)
-        stack.spacing = 8
+        stack.spacing = spacing
         stack.distribution = .fillEqually
         stack.alignment = .fill
         return stack
@@ -68,9 +69,16 @@ class ViewController: UIViewController {
 
     private func setupDisplayLabel() {
         stackView.addArrangedSubview(displayLabel)
-        displayLabel.text = "0"
-        displayLabel.textAlignment = .right
-        displayLabel.font = .systemFont(ofSize: 80)
+        let font = UIFont.systemFont(ofSize: 90, weight: .light)
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.tailIndent = -20
+        paragraphStyle.alignment = .right
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: font,
+            .foregroundColor: UIColor.label,
+            .paragraphStyle: paragraphStyle
+        ]
+        displayLabel.attributedText = NSAttributedString(string: "941", attributes: attributes)
     }
 
     private func touchDigit(_ text: String) {
