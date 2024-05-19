@@ -48,6 +48,10 @@
                             <constraint firstItem="AEQ-hw-D3z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Zt2-PJ-ssD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="sQy-tE-qhv" id="SCB-RF-WUn"/>
+                        <outlet property="passwordTextField" destination="YSz-0Z-zhh" id="dJk-DG-9eS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,22 +65,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUs-zn-dIZ">
-                                <rect key="frame" x="157.66666666666666" y="403.66666666666669" width="78" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Logout"/>
-                                <connections>
-                                    <segue destination="GLM-1e-xD1" kind="unwind" unwindAction="unwindFor:" id="P1U-zb-xT1"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Kyb-UF-EOE">
+                                <rect key="frame" x="16" y="380.33333333333331" width="361" height="81.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ow-sy-1vn">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUs-zn-dIZ">
+                                        <rect key="frame" x="0.0" y="47.333333333333371" width="361" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Logout"/>
+                                        <connections>
+                                            <segue destination="GLM-1e-xD1" kind="unwind" unwindAction="unwindFor:" id="P1U-zb-xT1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Og1-8P-iX1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kUs-zn-dIZ" firstAttribute="centerY" secondItem="tw9-NJ-Yef" secondAttribute="centerY" id="8Rx-f7-chs"/>
-                            <constraint firstItem="kUs-zn-dIZ" firstAttribute="centerX" secondItem="tw9-NJ-Yef" secondAttribute="centerX" id="efc-M6-Z2C"/>
+                            <constraint firstItem="Kyb-UF-EOE" firstAttribute="leading" secondItem="Og1-8P-iX1" secondAttribute="leading" constant="16" id="2T5-yp-cgu"/>
+                            <constraint firstItem="Og1-8P-iX1" firstAttribute="trailing" secondItem="Kyb-UF-EOE" secondAttribute="trailing" constant="16" id="CnO-bZ-kK1"/>
+                            <constraint firstItem="Kyb-UF-EOE" firstAttribute="centerY" secondItem="tw9-NJ-Yef" secondAttribute="centerY" id="ofK-51-hu5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="5ow-sy-1vn" id="G4T-LO-CyN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJq-3y-Yqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="GLM-1e-xD1" userLabel="Exit" sceneMemberID="exit"/>
